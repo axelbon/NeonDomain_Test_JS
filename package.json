@@ -1,0 +1,37 @@
+{
+  "name": "neondomain_test_js",
+  "version": "1.0.0",
+  "description": "This Javascript project is a test for NeonDomain job opportunity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec npm run migrate-and-start",
+    "migrate": "sequelize db:migrate:undo:all && sequelize db:migrate",
+    "seed": "npx sequelize-cli db:seed:all",
+    "migrate-and-start": "npm run migrate && npm start",
+    "start": "npm run migrate && node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelbon/NeonDomain_Test_JS.git"
+  },
+  "author": "axelbon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axelbon/NeonDomain_Test_JS/issues"
+  },
+  "homepage": "https://github.com/axelbon/NeonDomain_Test_JS#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.4",
+    "sequelize": "^6.35.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
