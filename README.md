@@ -14,7 +14,6 @@ To successfully run the project:
 
 2. Run the following CLI commands in the project directory terminal:
    - `npx sequelize-cli db:migrate`: Generates the database tables.
-   - `npx sequelize-cli db:seed:all`: (Optional) Runs seed files to populate the database.
 
 3. Start the project by running:
    - `npm run start`
