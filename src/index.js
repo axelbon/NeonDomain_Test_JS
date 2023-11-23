@@ -8,8 +8,8 @@ const app = express();
 app.use(express.json());
 
 // Define routes and middleware
-app.use('/summaries', summariesRoutes);
-app.use('/users', usersRouter);
+app.use('/summary', summariesRoutes);
+app.use('/user', usersRouter);
 app.get('/', (req, res) => {
   res.send('There is nothing to see here, look for /users or /summaries');
 });

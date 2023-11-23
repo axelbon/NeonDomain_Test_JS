@@ -9,7 +9,7 @@
     "migrate": "sequelize db:migrate:undo:all && sequelize db:migrate",
     "seed": "npx sequelize-cli db:seed:all",
     "migrate-and-start": "npm run migrate && npm start",
-    "start": "npm run migrate && node src/index.js"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
